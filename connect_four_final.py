@@ -1,5 +1,5 @@
-# Miglioramenti:
-# Fare funzioni per ogni passaggio con lo switch del player
+#Improvements:
+# Create functions for every step with player-switch.
 
 from itertools import product
 #First the characters for the 2 players are initialized.
@@ -44,7 +44,7 @@ def drop_the_piece(rows, columns, board):
     while True:
 
         if tie:
-            print("IT'S A TIE BOYS, GAME OVER")
+            print("IT'S A TIE, GAME OVER")
             break
 
         print("PLAYER 1 -> Select the column of the piece:")
@@ -108,7 +108,7 @@ def drop_the_piece(rows, columns, board):
                 pass         
 
         if p1_wins:
-            print("PLAYER 1 ,YOU WON MOTHERFUCKER! HOORAY")
+            print("PLAYER 1 ,YOU WON! HOORAY")
             break
 
         #PLAYER2 LOOP
@@ -180,7 +180,7 @@ def drop_the_piece(rows, columns, board):
                     pass
     
         if p2_wins:
-            print("PLAYER 2 ,YOU WON MOTHERFUCKER! HOORAY")
+            print("PLAYER 2 ,YOU WON HOORAY")
             break
 
 
